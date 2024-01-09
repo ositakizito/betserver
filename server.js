@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/ticket', (req, res) => {
-    const sql = "INSERT INTO ticket (`Date`,`Time`,`TicketID`,`Odds`,`bet`,`Potent`,`country1`,`countryLig1`,`Time1`,`Team1`,`Team2`,`SingleScore`,`SingleScore2`,`Score1`,`Odd1`,`country2`,`countryLig2`,`Time2`,`Team3`,`Team4`,`SingleScore3`,`SingleScore4`,`Score2`,`Odd2`) VALUES (?)";
+    const sql = "INSERT INTO ticket (`Date`,`Time`,`TicketID`,`Odds`,`bet`,`Potent`,`country1`,`countryLig1`,`Time1`,`Team1`,`Team2`,`SingleScore`,`SingleScore2`,`Odd1`,`country2`,`countryLig2`,`Time2`,`Team3`,`Team4`,`SingleScore3`,`SingleScore4`,`Odd2`) VALUES (?)";
     console.log(req.body);
     const vlaues = [
         req.body.date,
